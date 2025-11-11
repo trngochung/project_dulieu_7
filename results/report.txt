@@ -1,0 +1,18 @@
+Model evaluation report
+============================================================
+Accuracy: 0.34519572953736655
+
+Classification report:
+
+              precision    recall  f1-score   support
+
+           0       0.35      0.37      0.36        95
+           1       0.35      0.38      0.37       100
+           2       0.33      0.28      0.30        86
+
+    accuracy                           0.35       281
+   macro avg       0.34      0.34      0.34       281
+weighted avg       0.34      0.35      0.34       281
+
+
+Saved model: D:\bodulieu\my_project_py\results\warehouse_model.pkl

@@ -1,0 +1,83 @@
+======================================================================
+UCI-STANDARD MODEL COMPARISON REPORT
+======================================================================
+
+Data: D:\bodulieu\my_project_py\data\Updated Warehouse Data.csv
+Target: Size
+Train shape: (1120, 7), Test shape: (281, 7)
+Classes: 3
+
+RESULTS SUMMARY (sorted by F1 score):
+----------------------------------------------------------------------
+              model  accuracy  precision   recall       f1
+      Random Forest  0.345196   0.344387 0.345196 0.343750
+  Gradient Boosting  0.338078   0.338990 0.338078 0.335113
+Logistic Regression  0.355872   0.356480 0.355872 0.331349
+          SVM (RBF)  0.338078   0.343829 0.338078 0.322279
+          KNN (k=5)  0.327402   0.313892 0.327402 0.313033
+
+BEST MODEL:
+  Name: Random Forest
+  Accuracy: 0.3452
+  Precision: 0.3444
+  Recall: 0.3452
+  F1 Score: 0.3437
+
+DETAILED CLASSIFICATION REPORTS:
+======================================================================
+
+--- Random Forest ---
+              precision    recall  f1-score   support
+
+           0       0.35      0.37      0.36        95
+           1       0.35      0.38      0.37       100
+           2       0.33      0.28      0.30        86
+
+    accuracy                           0.35       281
+   macro avg       0.34      0.34      0.34       281
+weighted avg       0.34      0.35      0.34       281
+
+--- SVM (RBF) ---
+              precision    recall  f1-score   support
+
+           0       0.31      0.32      0.31        95
+           1       0.35      0.51      0.41       100
+           2       0.38      0.16      0.23        86
+
+    accuracy                           0.34       281
+   macro avg       0.34      0.33      0.32       281
+weighted avg       0.34      0.34      0.32       281
+
+--- Logistic Regression ---
+              precision    recall  f1-score   support
+
+           0       0.33      0.32      0.32        95
+           1       0.37      0.58      0.45       100
+           2       0.38      0.14      0.20        86
+
+    accuracy                           0.36       281
+   macro avg       0.36      0.35      0.33       281
+weighted avg       0.36      0.36      0.33       281
+
+--- Gradient Boosting ---
+              precision    recall  f1-score   support
+
+           0       0.33      0.34      0.33        95
+           1       0.34      0.41      0.37       100
+           2       0.35      0.26      0.30        86
+
+    accuracy                           0.34       281
+   macro avg       0.34      0.33      0.33       281
+weighted avg       0.34      0.34      0.34       281
+
+--- KNN (k=5) ---
+              precision    recall  f1-score   support
+
+           0       0.36      0.52      0.43        95
+           1       0.32      0.29      0.31       100
+           2       0.25      0.16      0.20        86
+
+    accuracy                           0.33       281
+   macro avg       0.31      0.32      0.31       281
+weighted avg       0.31      0.33      0.31       281
+
